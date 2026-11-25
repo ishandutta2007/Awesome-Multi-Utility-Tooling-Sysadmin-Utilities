@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="360" style="background:#090d16; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d"/>
+      <stop offset="50%" stop-color="#0d1527"/>
+      <stop offset="100%" stop-color="#050811"/>
+    </linearGradient>
+
+    <!-- Accent Gradients -->
+    <linearGradient id="primary-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+    <linearGradient id="glow-cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.1"/>
+    </linearGradient>
+    <linearGradient id="glow-purple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#ec4899" stop-opacity="0.1"/>
+    </linearGradient>
+
+    <!-- Grid Filter -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="0.75" stroke-opacity="0.6"/>
+    </pattern>
+
+    <!-- Glow Drop Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <filter id="card-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+
+    <style>
+      @keyframes pulse {
+        0%, 100% { transform: scale(1) translateY(0); opacity: 0.35; }
+        50% { transform: scale(1.08) translateY(-6px); opacity: 0.65; }
+      }
+      @keyframes floatSlow {
+        0%, 100% { transform: translateY(0px) translateX(0px); }
+        50% { transform: translateY(-8px) translateX(4px); }
+      }
+      @keyframes floatReverse {
+        0%, 100% { transform: translateY(0px) translateX(0px); }
+        50% { transform: translateY(8px) translateX(-4px); }
+      }
+      @keyframes dataFlow {
+        0% { stroke-dashoffset: 240; }
+        100% { stroke-dashoffset: 0; }
+      }
+      .anim-pulse-1 { animation: pulse 6s infinite ease-in-out; }
+      .anim-pulse-2 { animation: pulse 8s infinite ease-in-out 1s; }
+      .anim-float-1 { animation: floatSlow 5s infinite ease-in-out; }
+      .anim-float-2 { animation: floatReverse 7s infinite ease-in-out; }
+      .anim-flow { stroke-dasharray: 8 12; animation: dataFlow 12s linear infinite; }
+      .title-text { font-weight: 800; letter-spacing: -0.5px; fill: #ffffff; }
+      .tag-text { font-weight: 600; font-size: 13px; fill: #cbd5e1; }
+    </style>
+  </defs>
+
+  <!-- Background base -->
+  <rect width="1200" height="360" fill="url(#bg-grad)"/>
+  <rect width="1200" height="360" fill="url(#grid)"/>
+
+  <!-- Ambient Animated Lighting Spheres (in background) -->
+  <g class="anim-pulse-1" style="transform-origin: 180px 100px;">
+    <circle cx="180" cy="100" r="140" fill="url(#glow-cyan)" filter="url(#glow)"/>
+  </g>
+  <g class="anim-pulse-2" style="transform-origin: 1020px 240px;">
+    <circle cx="1020" cy="240" r="150" fill="url(#glow-purple)" filter="url(#glow)"/>
+  </g>
+
+  <!-- Decorative Circuit/Data Flow Lines behind content -->
+  <g opacity="0.35">
+    <path class="anim-flow" d="M 50 180 L 320 180 L 370 230 L 830 230 L 880 180 L 1150 180" fill="none" stroke="#38bdf8" stroke-width="2"/>
+    <path class="anim-flow" d="M 120 70 L 400 70 L 460 130 L 740 130 L 800 70 L 1080 70" fill="none" stroke="#a855f7" stroke-width="1.5" style="animation-direction: reverse;"/>
+    <path class="anim-flow" d="M 80 290 L 350 290 L 410 240 L 790 240 L 850 290 L 1120 290" fill="none" stroke="#818cf8" stroke-width="1.5"/>
+  </g>
+
+  <!-- Left Side Floating Card: Server Diagnostics (Dynamic Background Accents) -->
+  <g class="anim-float-1" transform="translate(60, 60)" filter="url(#card-shadow)">
+    <rect width="180" height="110" rx="12" fill="#131c31" fill-opacity="0.85" stroke="#1e293b" stroke-width="1.5"/>
+    <circle cx="24" cy="24" r="5" fill="#ef4444"/>
+    <circle cx="38" cy="24" r="5" fill="#eab308"/>
+    <circle cx="52" cy="24" r="5" fill="#22c55e"/>
+    <rect x="18" y="44" width="70" height="8" rx="4" fill="#38bdf8" fill-opacity="0.7"/>
+    <rect x="18" y="60" width="144" height="6" rx="3" fill="#334155"/>
+    <rect x="18" y="60" width="108" height="6" rx="3" fill="#38bdf8"/>
+    <rect x="18" y="76" width="144" height="6" rx="3" fill="#334155"/>
+    <rect x="18" y="76" width="75" height="6" rx="3" fill="#818cf8"/>
+    <rect x="18" y="92" width="144" height="6" rx="3" fill="#334155"/>
+    <rect x="18" y="92" width="125" height="6" rx="3" fill="#34d399"/>
+  </g>
+
+  <!-- Right Side Floating Card: Toolbox / CLI Status -->
+  <g class="anim-float-2" transform="translate(960, 190)" filter="url(#card-shadow)">
+    <rect width="180" height="110" rx="12" fill="#131c31" fill-opacity="0.85" stroke="#1e293b" stroke-width="1.5"/>
+    <rect x="16" y="18" width="55" height="18" rx="4" fill="#0f172a" stroke="#334155"/>
+    <text x="24" y="31" font-size="10" fill="#38bdf8" font-family="monospace">sysadmin</text>
+    <text x="80" y="31" font-size="11" fill="#64748b" font-family="monospace">v2026.11</text>
+    <path d="M 18 52 L 26 58 L 18 64" fill="none" stroke="#a855f7" stroke-width="2" stroke-linecap="round"/>
+    <line x1="32" y1="58" x2="90" y2="58" stroke="#cbd5e1" stroke-width="2" stroke-linecap="round"/>
+    <rect x="18" y="76" width="144" height="20" rx="6" fill="#0284c7" fill-opacity="0.2" stroke="#0284c7" stroke-width="1"/>
+    <text x="28" y="90" font-size="11" fill="#38bdf8" font-family="monospace">✓ 25+ suites active</text>
+  </g>
+
+  <!-- Main Foreground Content Banner (Always on top and perfectly readable) -->
+  <g transform="translate(600, 105)" text-anchor="middle">
+    <!-- Category Pill Badge -->
+    <rect x="-175" y="-30" width="350" height="34" rx="17" fill="#1e293b" fill-opacity="0.9" stroke="#38bdf8" stroke-width="1.2"/>
+    <text x="0" y="-8" font-size="13" font-weight="700" fill="#38bdf8" letter-spacing="1.2">🛠️ ALL-IN-ONE SYSADMIN &amp; UTILITIES</text>
+
+    <!-- Main Title -->
+    <text x="0" y="46" font-size="42" class="title-text">Awesome Multi-Utility &amp; Sysadmin</text>
+    
+    <!-- Subtitle Line -->
+    <text x="0" y="86" font-size="18" font-weight="400" fill="#94a3b8" letter-spacing="0.2">
+      Curated Swiss Army Knives • System Cleaners • Diagnostics • OS Tuning • Self-Hosted Tools
+    </text>
+
+    <!-- Tech Feature Pills -->
+    <g transform="translate(0, 125)">
+      <!-- Pill 1 -->
+      <g transform="translate(-250, 0)">
+        <rect x="-65" y="0" width="130" height="32" rx="16" fill="#0f172a" stroke="#334155" stroke-width="1.2"/>
+        <text x="0" y="20" text-anchor="middle" class="tag-text">🧹 OS Cleaners</text>
+      </g>
+      <!-- Pill 2 -->
+      <g transform="translate(-85, 0)">
+        <rect x="-80" y="0" width="160" height="32" rx="16" fill="#0f172a" stroke="#334155" stroke-width="1.2"/>
+        <text x="0" y="20" text-anchor="middle" class="tag-text">📊 TUI / GUI Monitors</text>
+      </g>
+      <!-- Pill 3 -->
+      <g transform="translate(85, 0)">
+        <rect x="-75" y="0" width="150" height="32" rx="16" fill="#0f172a" stroke="#334155" stroke-width="1.2"/>
+        <text x="0" y="20" text-anchor="middle" class="tag-text">🌐 Web Toolboxes</text>
+      </g>
+      <!-- Pill 4 -->
+      <g transform="translate(250, 0)">
+        <rect x="-70" y="0" width="140" height="32" rx="16" fill="#0f172a" stroke="#334155" stroke-width="1.2"/>
+        <text x="0" y="20" text-anchor="middle" class="tag-text">⚡ Rescue &amp; Boot</text>
+      </g>
+    </g>
+
+    <!-- Bottom border highlight line -->
+    <line x1="-300" y1="180" x2="300" y2="180" stroke="url(#primary-grad)" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+</svg>
