@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Multi-Utility-Tooling-Sysadmin-Utilities/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Multi-Utility-Tooling-Sysadmin-Utilities?style=social" alt="GitHub stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Multi-Utility-Tooling-Sysadmin-Utilities/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Multi-Utility-Tooling-Sysadmin-Utilities?style=social" alt="GitHub_Stars" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Multi-Utility-Tooling-Sysadmin-Utilities/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Multi-Utility-Tooling-Sysadmin-Utilities?style=social" alt="GitHub forks" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Multi-Utility-Tooling-Sysadmin-Utilities/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Multi-Utility-Tooling-Sysadmin-Utilities?style=flat-square" alt="License" /></a>
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
@@ -68,7 +68,7 @@ Explore the most powerful community-driven, free, and open-source system adminis
 
 *Repositories are sorted in descending order by GitHub stargazers count.*
 
-| 📦 Repository & Project Name | ⭐ GitHub Stars | 🎯 Category / Primary Focus | 🛠️ Technology Stack | 💡 Core Purpose & Description |
+| 📦 Repository & Project Name | ⭐ GitHub_Stars | 🎯 Category / Primary Focus | 🛠️ Technology Stack | 💡 Core Purpose & Description |
 | :--- | :--- | :--- | :--- | :--- |
 | **[microsoft/PowerToys](https://github.com/microsoft/PowerToys)** | [![Stars](https://img.shields.io/github/stars/microsoft/PowerToys?style=social&color=white)](https://github.com/microsoft/PowerToys/stargazers) | Windows Power User Toolkit | C++, C#, XAML | Premier set of system utilities for Windows power users including FancyZones window tiling, PowerToys Run, OCR Text Extractor, and Awake. |
 | **[ventoy/Ventoy](https://github.com/ventoy/Ventoy)** | [![Stars](https://img.shields.io/github/stars/ventoy/Ventoy?style=social&color=white)](https://github.com/ventoy/Ventoy/stargazers) | Bootable USB & OS Deployment | C, Shell | Revolutionary bootable USB solution allowing users to boot directly from ISO/WIM/IMG/VHD(x)/EFI files without reformatting the flash drive. |
@@ -108,7 +108,7 @@ Contributions from the sysadmin, DevOps, and power user community are warmly enc
 3. 📝 **Add or Enhance Entries** in `README.md`:
    - Keep descriptions factual, unbiased, and technically accurate.
    - For SaaS tools: include verified pricing tiers, specific free trial/tier limits, and parent company valuation/revenue data.
-   - For Open-Source tools: include the official GitHub repository link, star badge (`style=social&color=white`), tech stack, and primary category.
+   - For Open-Source tools: include the official GitHub repository link, Stars_Badge (`style=social&color=white`), tech stack, and primary category.
 4. 🚀 **Submit a Pull Request** with a concise description of why the tool deserves inclusion.
 
 ---
